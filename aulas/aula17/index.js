@@ -3,7 +3,7 @@ function saudacao(nome) {
 }
 
 const variavel = saudacao('Wesley')
-console.log(variavel)
+// console.log(variavel)
 
 function soma(x = 10, y = 56) {
   const somando = x + y
@@ -21,5 +21,12 @@ const raiz = function (n) {
 
 const resto = (n, r) => n % r
 
-const restante = resto(13, 2)
+// const restante = resto(13, 2)
+
 console.log(restante)
+
+function restio(a, b) {
+  console.log(a + b)
+}
+
+// console.log(restio(5, 3))
