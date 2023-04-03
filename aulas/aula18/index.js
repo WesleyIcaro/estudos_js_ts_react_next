@@ -53,10 +53,10 @@ const pessoa3 = criaPessoa('Victor', 'Hugo', 20)
 const pessoa4 = criaPessoa('Guilherme', 'Duarte', 20)
 const pessoa5 = criaPessoa('Tamara', 'Luzia', 23)
 
-// console.log(
-//   pessoa1.idade,
-//   pessoa2.nome,
-//   pessoa3.sobrenome,
-//   pessoa4.idade,
-//   pessoa5.nome
-// )
+console.log(
+  pessoa1.idade,
+  pessoa2.nome,
+  pessoa3.sobrenome,
+  pessoa4.idade,
+  pessoa5.nome
+)
