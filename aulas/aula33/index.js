@@ -1,10 +1,21 @@
 const pessoa = {
   nome: 'Wesley',
-  Sobrenome: 'Icaro',
+  sobrenome: 'Icaro',
   idade: 24,
   endereco: {
     rua: 'Jornalista Milton Cury',
     numero: 21
   }
 }
-console.log(pessoa)
+
+// Atribuição via desestruturação
+// const { nome: teste = '', sobrenome, idade } = pessoa
+
+// const {
+//   endereco: { rua: r = 12345, numero },
+//   endereco
+// } = pessoa
+
+const { ...rest } = pessoa
+
+console.log(rest)
