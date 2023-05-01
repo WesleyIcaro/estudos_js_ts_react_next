@@ -16,10 +16,6 @@ body {
   background-color: #86b9c4;
 }
 
-p {
-  margin-top: 15px;
-}
-
 .container {
   max-width: 600px;
   background-color: white;
@@ -28,17 +24,15 @@ p {
   border-radius: 10px;
 }
 
-.hour {
-  font-size: 3em;
+#task {
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
-button {
-  cursor: pointer;
-  padding: 5px;
-  border-radius: 10px;
+p {
+  margin-top: 10px;
 }
 
-.pausado {
-  color: red;
+button {
+  margin-left: 10px;
 }
