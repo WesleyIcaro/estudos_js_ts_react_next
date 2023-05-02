@@ -5,7 +5,7 @@ const resultadoBom = document.querySelector('.resultado')
 
 // function calculoImc() {
 form.addEventListener('submit', function (e) {
-  event.preventDefault()
+  e.preventDefault()
   const inputPeso = e.target.querySelector('.peso')
   const inputAltura = e.target.querySelector('.altura')
 
