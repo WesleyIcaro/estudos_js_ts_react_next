@@ -5,7 +5,7 @@ function soma(a, b) {
   return a + b
 }
 
-console.log(soma(5, 2))
+// console.log(soma(5, 2))
 
 function criaPessoa(nome, idade) {
   return { nome, idade }
@@ -18,7 +18,7 @@ const p2 = {
   idade: 16
 }
 
-console.log(p1, p2)
+// console.log(p1, p2)
 
 function falafrase(comeco) {
   function falaResto(resto) {
@@ -29,4 +29,28 @@ function falafrase(comeco) {
 
 const fala = falafrase('Olá')
 const resto = fala('mundo!')
-console.log(resto)
+// console.log(resto)
+
+// function duplica(n) {
+//   return n * 2
+// }
+
+// function triplica(n) {
+//   return n * 3
+// }
+
+// function quadriplica(n) {
+//   return n * 4
+// }
+
+function criaMultiplicador(multiplicador) {
+  return function (n) {
+    return n * multiplicador
+  }
+}
+
+const duplica = criaMultiplicador(2)
+const triplica = criaMultiplicador(3)
+const quadriplica = criaMultiplicador(4)
+
+console.log(duplica(2), triplica(2), quadriplica(2))
