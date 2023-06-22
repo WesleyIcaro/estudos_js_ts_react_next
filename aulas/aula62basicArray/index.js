@@ -1,9 +1,10 @@
 // Strings, Objetos, Funções, Números
 // const nomes = new Array('Eduardo', 'Maria', 'Joana')
 const nomes = ['Eduardo', 'Maria', 'Juana']
-// const novo = [...nomes]
+// const novo = nomes // Tudo que for feito em nomes, refletirá em novo.
+// const novo = [...nomes] // Copia o array na const novo e nada que fizer nele a partir de agora será refletido em nomes
 nomes[2] = 'João' // Substitui o atual item de mesmo indíce
-// delete nomes[2]
+// delete nomes[2] // Remove sem alterar o indíce
 // const removidoFinal = novo.pop()
 // const removidoInicio = novo.shift()
 
