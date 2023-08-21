@@ -30,6 +30,6 @@ const pessoasId = pessoas.map((obj, indice) => {
   return newObj
 })
 
-console.log(pessoasNomes)
-console.log(pessoasSemNomes)
+// console.log(pessoasNomes)
+// console.log(pessoasSemNomes)
 console.log(pessoasId)

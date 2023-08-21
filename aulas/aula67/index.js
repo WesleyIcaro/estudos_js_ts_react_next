@@ -27,4 +27,13 @@ const pessoasMaisVelha = pessoas.reduce((acumulador, obj) => {
   return obj
 })
 
-console.log(pessoasMaisVelha)
+// console.log(pessoasMaisVelha)
+
+const removeDuplicates = array => {
+  return array.filter((item, index) => array.indexOf(item) === index)
+}
+
+const semRep = removeDuplicates(numeros)
+
+console.log(numeros)
+console.log(semRep)
