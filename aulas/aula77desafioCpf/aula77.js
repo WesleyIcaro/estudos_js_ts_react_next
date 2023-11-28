@@ -60,22 +60,25 @@ ValidadorCpf.prototype.validar = function () {
 
   if (this.cpfLimpo.length !== 11) return false;
 
-  const primeiroDigito = this.cpfLimpo.substring(0, 9);
+  const cpfParcial = this.cpfLimpo.substring(0, 9);
 
-  cpfArray = Array.from(primeiroDigito);
+  const digito1 = this.criaDigito(cpfParcial);
 
-  const soma = cpfArray.reduce((ac, val) => ac + Number(val), 0);
+  return true;
+};
+
+ValidadorCpf.prototype.criaDigito = function (cpfParcial) {
+  cpfArray = Array.from(cpfParcial);
+
+  let regressivo = cpfArray.length + 1;
+
+  const soma = cpfArray.reduce((ac, val) => {
+    ac += regressivo * Number(val);
+    regressivo--;
+    return ac;
+  }, 0);
 
   console.log(soma);
-
-  const formulaCpf = 11 - (soma % 11);
-
-  /*
-    11 - (237 % 11 ) = 5 (Primeiro dígito) OBS: Maior 
-    que 9 é igual a 0
-   */
-
-  return formulaCpf;
 };
 
 const validador = new ValidadorCpf(cpf);
