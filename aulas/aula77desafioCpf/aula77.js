@@ -78,7 +78,13 @@ ValidadorCpf.prototype.criaDigito = function (cpfParcial) {
     return ac;
   }, 0);
 
-  console.log(soma);
+  const primeiroDigito = 11 - (soma % 11)
+
+  cpfArray.push(primeiroDigito)
+
+  regressivo = cpfArray.length + 1;
+
+  console.log(regressivo)
 };
 
 const validador = new ValidadorCpf(cpf);
