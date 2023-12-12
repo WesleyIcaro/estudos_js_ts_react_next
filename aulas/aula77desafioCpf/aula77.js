@@ -64,7 +64,11 @@ ValidadorCpf.prototype.validar = function () {
 
   const digito1 = this.criaDigito(cpfParcial);
 
-  return true;
+  const digito2 = this.criaDigito(cpfParcial + digito1);
+
+  const novoCpf = cpfParcial + digito1 + digito2;
+
+  return novoCpf === this.cpfLimpo;
 };
 
 ValidadorCpf.prototype.criaDigito = function (cpfParcial) {
@@ -78,13 +82,9 @@ ValidadorCpf.prototype.criaDigito = function (cpfParcial) {
     return ac;
   }, 0);
 
-  const primeiroDigito = 11 - (soma % 11)
+  const primeiroDigito = 11 - (soma % 11);
 
-  cpfArray.push(primeiroDigito)
-
-  regressivo = cpfArray.length + 1;
-
-  console.log(regressivo)
+  return primeiroDigito < 10 ? String(primeiroDigito) : String(0);
 };
 
 const validador = new ValidadorCpf(cpf);
