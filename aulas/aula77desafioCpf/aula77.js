@@ -60,6 +60,8 @@ ValidadorCpf.prototype.validar = function () {
 
   if (this.cpfLimpo.length !== 11) return false;
 
+  if (this.isSequencia()) return false;
+
   const cpfParcial = this.cpfLimpo.substring(0, 9);
 
   const digito1 = this.criaDigito(cpfParcial);
@@ -86,6 +88,11 @@ ValidadorCpf.prototype.criaDigito = function (cpfParcial) {
 
   return primeiroDigito < 10 ? String(primeiroDigito) : String(0);
 };
+
+ValidadorCpf.prototype.isSequencia = function () {
+  const sequencia = this.cpfLimpo[0].repeat(this.cpfLimpo.length)
+  return (sequencia === this.cpfLimpo);
+}
 
 const validador = new ValidadorCpf(cpf);
 
