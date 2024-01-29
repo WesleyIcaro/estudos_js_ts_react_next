@@ -49,7 +49,7 @@ const p2 = criaProduto("camiseta");
 
 p2.nome = "Qualquer coisa!";
 
-console.log(p2.nome);
+console.log(p1);
 
 // for (let chave in p1) {
 //   console.log(p1[chave]);
