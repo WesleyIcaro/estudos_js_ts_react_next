@@ -42,44 +42,44 @@ for (let i = 0; i <= 220; i++) {
 
 // c1.velocidade = 1500
 
-// c1.velocidade = 85
+c1.velocidade = 85
 
-// console.log(c1.velocidade)
-
-
-class Pessoa {
-
-    constructor(nome, sobrenome) {
-        this.nome = nome;
-        this.sobrenome = sobrenome;
-    }
-
-    get nomeCompleto() {
-        return this.nome + " " + this.sobrenome
-    }
-
-    set nomeCompleto(valor) {
-        valor = valor.split(' ')
-        this.nome = valor.shift()
-        this.sobrenome = valor.join(" ")
-    }
-
-    falar() {
-        console.log(`${this.nome} está falando!`)
-    }
-
-    comer() {
-        console.log(`${this.nome} está comendo!`)
-    }
-
-    beber() {
-        console.log(`${this.nome} está bebendo!`)
-    }
-}
+console.log(c1)
 
 
-p1 = new Pessoa("Guilherme", "Victor")
-p1.nomeCompleto = "Guilherme Victor Juan"
-console.log(p1.nome)
-console.log(p1.sobrenome)
-console.log(p1.nomeCompleto)
+// class Pessoa {
+
+//     constructor(nome, sobrenome) {
+//         this.nome = nome;
+//         this.sobrenome = sobrenome;
+//     }
+
+//     get nomeCompleto() {
+//         return this.nome + " " + this.sobrenome
+//     }
+
+//     set nomeCompleto(valor) {
+//         valor = valor.split(' ')
+//         this.nome = valor.shift()
+//         this.sobrenome = valor.join(" ")
+//     }
+
+//     falar() {
+//         console.log(`${this.nome} está falando!`)
+//     }
+
+//     comer() {
+//         console.log(`${this.nome} está comendo!`)
+//     }
+
+//     beber() {
+//         console.log(`${this.nome} está bebendo!`)
+//     }
+// }
+
+
+// p1 = new Pessoa("Guilherme", "Victor")
+// p1.nomeCompleto = "Guilherme Victor Juan"
+// console.log(p1.nome)
+// console.log(p1.sobrenome)
+// console.log(p1.nomeCompleto)
