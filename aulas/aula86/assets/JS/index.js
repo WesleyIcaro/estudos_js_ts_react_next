@@ -50,6 +50,10 @@ class ValidaFormulario {
         e.preventDefault()
         const camposValidos = this.isValid()
         const senhasValidas = this.passwordIsValid()
+
+        if (camposValidos && senhasValidas) {
+            alert("Formulário Enviado!")
+        }
     }
 
     passwordIsValid() {
