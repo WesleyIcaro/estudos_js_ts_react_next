@@ -21,36 +21,42 @@
             <li>Senha precisa ter entre 6 e 12 caracteres</li>
         </ul>
 
-        <form action="">
+        <form action="/" method="POST">
 
             <div id="div-first-name">
-                <label for="name">Nome:</label>
-                <input type="text" id="name">
+                <label for="name">Nome</label>
+                <input class="validar" type="text" id="name" name="Nome">
+                <span id="warning-name"></span>
             </div>
 
             <div id="div-second-name">
-                <label for="second-name">Sobrenome:</label>
-                <input type="text" id="second-name">
+                <label for="second-name">Sobrenome</label>
+                <input class="validar" type="text" id="second-name" name="Sobrenome">
+                <span id="warning-second-name"></span>
             </div>
 
             <div id="div-cpf">
-                <label for="cpf">CPF:</label>
-                <input type="text" id="cpf">
+                <label for="cpf">CPF</label>
+                <input class="cpf validar" type="text" id="cpf" name="CPF">
+                <span id="warning-cpf"></span>
             </div>
 
             <div id="div-user">
-                <label for="user">Usuário:</label>
-                <input type="text" id="user">
+                <label for="user">Usuário</label>
+                <input class="validar user" type="text" id="user" name="Usuário">
+                <span id="warning-user"></span>
             </div>
 
             <div id="div-password">
-                <label for="password">Senha:</label>
-                <input type="text" id="password">
+                <label for="password">Senha</label>
+                <input class="validar password" type="password" id="password" name="Senha">
+                <span id="warning-password"></span>
             </div>
 
             <div id="div-repeat-password">
-                <label for="repeat-password">Repetir senha:</label>
-                <input type="text" id="repeat-password">
+                <label for="repeat-password">Repetir senha</label>
+                <input class="validar repeat-password" type="password" id="repeat-password" name="Repetir Senha">
+                <span id="warning-repeat-password"></span>
             </div>
 
             <button type="submit">Enviar</button>
@@ -59,6 +65,7 @@
     </div>
 
     <script src="assets/JS/index.js"></script>
+    <script src="assets/JS/validaCPF.js"></script>
 
 </body>
 

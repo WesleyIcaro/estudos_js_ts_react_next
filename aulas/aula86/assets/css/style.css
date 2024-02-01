@@ -62,3 +62,9 @@ li {
     margin: 1rem 0rem;
     font-weight: 600;
 }
+
+span p,
+.error-text {
+    margin-top: 0.5rem;
+    color: red;
+}
