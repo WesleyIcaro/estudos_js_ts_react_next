@@ -9,7 +9,7 @@ function esperaAi(msg, tempo) {
     setTimeout(() => {
       if (typeof msg !== 'string') {
         reject('CAI NO ERRO')
-        return
+        return // Para a função parar de executar de verdade, pois o reject não travva função.
       }
       resolve(msg.toUpperCase() + ' - Passei na promise')
     }, tempo)
@@ -18,11 +18,11 @@ function esperaAi(msg, tempo) {
 
 // Promise.all Promise.race Promise.resolve Promise.reject
 // const promises = [
-//   // 'Primeiro valor'
+//   // 'Primeiro valor',
 //   esperaAi(1000, rand(1, 5)),
 //   esperaAi('Promise 1', rand(1, 5)),
 //   esperaAi('Promise 2', rand(1, 5)),
-//   esperaAi('Promise 3', rand(1, 5))
+//   esperaAi('Promise 3', rand(1, 5)),
 //   // 'Outro valor'
 // ]
 
@@ -35,18 +35,19 @@ function esperaAi(msg, tempo) {
 //   })
 
 // Promise.race(promises) // Resolve a promise que vier primeiro e ingnora o restante.
-// .then(function (valor) {
-//   console.log(valor)
-// })
-// .catch(function (erro) {
-//   console.log(erro)
-// })
+//   .then(function (valor) {
+//     console.log(valor)
+//   })
+//   .catch(function (erro) {
+//     console.log(erro)
+//   })
 
 function baixaPagina() {
   const emCache = true
 
   if (emCache) {
-    return Promise.reject('Página em cache')
+    // return Promise.resolve('Página em cache')
+    return Promise.reject('Página em cache') // reject envia direto para o catch e o resolve faz ao contrário
   } else {
     return esperaAi('Baixei a página', 3000)
   }

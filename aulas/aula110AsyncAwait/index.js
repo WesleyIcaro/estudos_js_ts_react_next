@@ -55,12 +55,12 @@ async function executa() {
   }
 }
 
-// executa()
+executa()
 
-const teste2 = esperaAi('qlq', 5000)
-setTimeout(function () {
-  console.log(teste2)
-}, 5100)
+// const teste2 = esperaAi('qlq', 5000)
+// setTimeout(function () {
+//   console.log(teste2)
+// }, 5100)
 
 // pending -> pendente
 // fullfiled -> resolvida
