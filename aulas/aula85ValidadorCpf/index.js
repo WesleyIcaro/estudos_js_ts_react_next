@@ -57,8 +57,6 @@ class ValidadorCpf {
         return (novoCpf === this.limparCpf())
     }
 
-
-
 }
 
 const v1 = new ValidadorCpf("070.987.720-03")
