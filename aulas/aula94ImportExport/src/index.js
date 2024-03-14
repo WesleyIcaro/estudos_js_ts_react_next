@@ -1,18 +1,28 @@
-class Floresta {
+// import { Florest, idade, nome as name, sobrenome, soma, Pessoa } from "./module1.js";
 
-    constructor(arvore, rio) {
-        this.arvore = arvore;
-        this.rio = rio;
+// import * as MeuModulo from "./module1.js";
 
-        this.aventura()
-    }
+import o, { Florest as Florestinha, Pessoa, idade, nome, sobrenome, soma } from "./module1.js";
 
-    aventura() {
-        console.log(`Na floresta tem ${this.arvore} e o ${this.rio}!`)
-    }
-}
+// console.log(MeuModulo)
 
-const amazonia = new Floresta("árvore Brasil", "rio amazonas")
+// console.log(MeuModulo.soma(5, 5))
+
+console.log(o(102, 967))
+
+// console.log(bosta)
+
+const amazonia = new Florestinha("árvore Brasil", "rio amazonas")
+
+// const nome = "Pereira"
+
+console.log(idade)
+
+console.log(soma(1, 10))
+
+const p1 = new Pessoa(nome, sobrenome)
+
+console.log(p1)
 
 // dsfdfsdfdsf
 // dsfdsf
