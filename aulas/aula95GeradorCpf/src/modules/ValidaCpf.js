@@ -50,12 +50,5 @@ export default class ValidaCpf {
     }
 }
 
-let validaCpf = new ValidaCpf("793.979.860-07")
-
-// if (validaCpf.valida()) {
-//     console.log('CPF válido')
-// } else {
-//     console.log('CPF inválido')
-// }
 
 console.log("Cheguei aqui!")
